@@ -36,24 +36,23 @@
   <section aria-labelledby="downloaden">
     <!-- Current release. Update the version, the two file links and the notice for every published release. -->
     <h1 id="downloaden" style="font-size:36px;letter-spacing:-0.8px;margin:0 0 8px">Downloaden</h1>
-    <p class="lead">Nieuwste versie: <strong>V0.08 Alpha</strong>. Gratis, zonder account en zonder reclame.</p>
+    <p class="lead">Nieuwste versie: <strong>V0.9 Beta</strong>. Gratis, zonder account en zonder reclame.</p>
 
     <div class="notice" style="margin:0 0 20px">
-      <p><strong>Testversie.</strong> Er kunnen nog fouten in zitten en onderdelen kunnen nog veranderen. Gebruik
-      deze versie nog niet als enige middel bij een echte inzet. De app heet in deze versie nog
-      <em>DARES Berichtenformulier</em>.</p>
+      <p><strong>Bètaversie.</strong> Alles wat in versie 1.0 moet zitten, zit erin; tot versie 1.0 komen er alleen
+      nog verbeteringen. Houd bij een echte inzet het papieren formulier achter de hand.</p>
     </div>
 
     <div class="platforms">
       <div class="platform">
         <h3>Windows</h3>
         <p class="meta">Windows 10 en 11, laptop of pc</p>
-        <a class="button" href="https://github.com/fvanson/dares-berichtenformulier-download/releases/download/v0.0.8-alpha/Berichtenformulier-V0.08-Alpha-Windows.zip">Download voor Windows</a>
+        <a class="button" href="https://github.com/fvanson/oversein-download/releases/download/v0.9.0-beta/Oversein-V0.9-Beta-Windows.zip">Download voor Windows</a>
       </div>
       <div class="platform">
         <h3>Android</h3>
         <p class="meta">Android 7.0 of nieuwer, telefoon of tablet</p>
-        <a class="button" href="https://github.com/fvanson/dares-berichtenformulier-download/releases/download/v0.0.8-alpha/Berichtenformulier-V0.08-Alpha-Android.apk">Download voor Android</a>
+        <a class="button" href="https://github.com/fvanson/oversein-download/releases/download/v0.9.0-beta/Oversein-V0.9-Beta-Android.apk">Download voor Android</a>
       </div>
       <div class="platform">
         <h3>iPhone en iPad</h3>
@@ -66,8 +65,10 @@
         <p class="later">Later beschikbaar</p>
       </div>
     </div>
-    <p style="margin-top:16px">Alle versies en wat er per versie veranderd is:
-    <a href="https://github.com/fvanson/dares-berichtenformulier-download/releases">overzicht van alle versies</a>.</p>
+    <p style="margin-top:16px"><strong>Snelstart op één A4</strong>, om af te drukken voor een inzet of training:
+    <a href="snelstart.pdf">snelstart (PDF)</a>.</p>
+    <p>Alle versies en wat er per versie veranderd is:
+    <a href="https://github.com/fvanson/oversein-download/releases">overzicht van alle versies</a>.</p>
   </section>
 
   <section aria-labelledby="windows">
@@ -75,7 +76,7 @@
     <div class="card">
       <ol class="steps">
         <li>Pak het zip-bestand uit, bijvoorbeeld naar je map Documenten (rechtsklik, <em>Alles uitpakken</em>).</li>
-        <li>Open de map <code>Berichtenformulier</code> en start <code>berichtenformulier.exe</code>.</li>
+        <li>Open de map <code>Oversein</code> en start <code>oversein.exe</code>.</li>
         <li>Windows kan waarschuwen met <em>"Windows heeft uw pc beveiligd"</em>, omdat de app nog niet digitaal
         ondertekend is. Klik op <strong>Meer informatie</strong> en dan op <strong>Toch uitvoeren</strong>.</li>
       </ol>
@@ -94,7 +95,7 @@
         <li>Google Play Protect kan waarschuwen dat de app onbekend is. Kies <strong>Details</strong> en dan
         <strong>Toch installeren</strong>.</li>
       </ol>
-      <p>De app heet op je telefoon <strong>Berichtenformulier</strong>.</p>
+      <p>De app heet op je telefoon <strong>Oversein</strong>.</p>
     </div>
   </section>
 
@@ -103,13 +104,31 @@
     <div class="card">
       <p>Je berichten en instellingen blijven bewaard bij het bijwerken.</p>
       <ul class="plain">
-        <li><strong>Windows:</strong> pak de nieuwe zip uit en gebruik de nieuwe map <code>Berichtenformulier</code>.
-        De oude map mag weg: je berichten staan niet in die map maar in je gebruikersprofiel
-        (<code>%APPDATA%\me.vanson\DARES Berichtenformulier</code>).</li>
+        <li><strong>Windows:</strong> pak de nieuwe zip uit en gebruik de nieuwe map <code>Oversein</code>. De oude
+        map mag weg: je berichten staan niet in die map maar in je gebruikersprofiel
+        (<code>%APPDATA%\me.vanson\Oversein</code>).</li>
         <li><strong>Android:</strong> installeer de nieuwe versie over de oude heen. Verwijder de oude app
         <strong>niet</strong> eerst, want dan ben je je berichten kwijt.</li>
       </ul>
       <p>Maak voor de zekerheid vóór het bijwerken een <strong>CSV-export</strong> als back-up.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="schoon">
+    <h2 id="schoon">Van een testversie met de naam Berichtenformulier</h2>
+    <div class="card">
+      <p>Oversein V0.9 Beta begint met een <strong>schone lei</strong>: berichten uit de eerdere testversies
+      (<em>DARES Berichtenformulier</em>, tot en met V0.08 Alpha) gaan niet vanzelf mee, en de oude en de nieuwe app
+      wisselen geen berichten uit.</p>
+      <ul class="plain">
+        <li>Wil je oude berichten bewaren? Maak in de oude app een <strong>CSV-export</strong> en lees die in Oversein in
+        met <strong>CSV importeren</strong>.</li>
+        <li><strong>Android:</strong> Oversein komt naast de oude app. Verwijder daarna de oude app
+        <em>Berichtenformulier</em>.</li>
+        <li><strong>Windows:</strong> gooi de oude map <code>Berichtenformulier</code> weg, en ook de oude gegevens in
+        <code>%APPDATA%\me.vanson\DARES Berichtenformulier</code>. Had je de oude app vastgemaakt aan de taakbalk of het
+        startmenu? Maak dan <code>oversein.exe</code> vast en haal de oude weg.</li>
+      </ul>
     </div>
   </section>
 
@@ -129,7 +148,7 @@
   <div class="wrap">
     <p>Oversein is een onofficiële app, gemaakt door PD2FT (DARES regio 20) voor het werk tijdens een inzet of training. Het is geen
     uitgave van DARES.</p>
-    <p>Deze site gebruikt geen cookies en geen statistieken.</p>
+    <p>Deze site gebruikt geen cookies en geen statistieken. <a href="privacy.html">Privacy</a></p>
   </div>
 </footer>
 

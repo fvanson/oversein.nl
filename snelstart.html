@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oversein snelstart</title>
+<meta name="description" content="Oversein in één A4: installeren, eerste start, een bericht invullen, statussen, doorgeven en afsluiten.">
+<meta name="theme-color" content="#12324F">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<style>
+  /* One A4 page, printable as is (also made into snelstart.pdf). Fonts from this site. */
+  @font-face { font-family: Roboto; font-weight: 400; src: url(assets/fonts/Roboto-Regular.ttf) format("truetype"); }
+  @font-face { font-family: Roboto; font-weight: 700; src: url(assets/fonts/Roboto-Bold.ttf) format("truetype"); }
+  @page { size: A4 portrait; margin: 11mm 12mm; }
+  :root { --navy: #12324F; --orange: #F28C28; --yellow: #F3BE00; --ink: #1C2530; --muted: #4A5663; --line: #D5D1C8; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font-family: Roboto, system-ui, sans-serif; color: var(--ink); background: #fff; font-size: 10.4pt; line-height: 1.38; }
+  .page { max-width: 186mm; margin: 0 auto; padding: 16px; }
+  @media print { .page { padding: 0; max-width: none; } }
+  header { display: flex; align-items: center; gap: 12px; background: var(--navy); color: #fff; border-radius: 8px; padding: 10px 14px; }
+  header svg { width: 44px; height: 44px; flex: none; }
+  header h1 { margin: 0; font-size: 20pt; line-height: 1.05; }
+  header p { margin: 2px 0 0; color: #E3EAF1; font-size: 10pt; }
+  header .site { margin-left: auto; text-align: right; font-weight: 700; font-size: 11pt; }
+  header .site span { display: block; font-weight: 400; color: var(--orange); font-size: 9pt; }
+  .cols { columns: 2; column-gap: 7mm; margin-top: 10px; }
+  section { break-inside: avoid; margin: 0 0 9px; }
+  h2 { font-size: 11.5pt; margin: 0 0 4px; color: var(--navy); display: flex; align-items: center; gap: 7px; }
+  h2 .n { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--orange); color: #0C2238; font-size: 9.5pt; flex: none; }
+  p { margin: 0 0 4px; }
+  ul, ol { margin: 0 0 4px; padding-left: 17px; }
+  li { margin-bottom: 2px; }
+  b { font-weight: 700; }
+  .k { display: inline-block; border: 1px solid #9AA5B1; border-radius: 4px; padding: 0 5px; font-size: 9pt; background: #F3F5F8; white-space: nowrap; }
+  .steps { display: flex; flex-wrap: wrap; gap: 3px 4px; align-items: center; margin: 3px 0 5px; font-size: 9pt; }
+  .steps span { border: 1px solid var(--navy); border-radius: 99px; padding: 0 7px; }
+  .steps i { font-style: normal; color: var(--muted); }
+  .note { border-left: 4px solid var(--orange); background: #FFF5EA; padding: 5px 8px; border-radius: 4px; margin-top: 4px; }
+  .paper { display: flex; gap: 6px; margin: 3px 0 5px; font-size: 9pt; }
+  .paper span { border: 1px solid #9E9E9E; padding: 1px 6px; border-radius: 3px; }
+  .paper .grey { background: #EFEFEF; }
+  footer { margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--line); color: var(--muted); font-size: 8.6pt; display: flex; justify-content: space-between; gap: 12px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <svg viewBox="200 196 632 632" aria-hidden="true"><circle cx="400" cy="512" r="150" fill="none" stroke="#FFFFFF" stroke-width="88"/><g fill="none" stroke="#F28C28" stroke-width="60" stroke-linecap="round"><path d="M614.5 332.0 A280 280 0 0 1 614.5 692.0"/><path d="M703.4 257.5 A396 396 0 0 1 703.4 766.5"/></g></svg>
+    <div>
+      <h1>Oversein snelstart</h1>
+      <p>Het DARES Berichtenformulier op laptop, tablet of telefoon. Werkt zonder internet.</p>
+    </div>
+    <div class="site">oversein.nl<span>V0.9 Beta</span></div>
+  </header>
+
+  <div class="cols">
+    <section>
+      <h2><span class="n">1</span>Installeren (vooraf, met internet)</h2>
+      <p>Download de app op <b>oversein.nl</b> → Downloaden.</p>
+      <ul>
+        <li><b>Windows:</b> pak de zip uit en start <b>oversein.exe</b> in de map Oversein. Waarschuwing
+        <i>"Windows heeft uw pc beveiligd"</i>? Kies <b>Meer informatie</b> → <b>Toch uitvoeren</b>.</li>
+        <li><b>Android:</b> open het gedownloade bestand en sta <i>Onbekende apps installeren</i> toe. Waarschuwt Play
+        Protect? Kies <b>Details</b> → <b>Toch installeren</b>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="n">2</span>Eerste start</h2>
+      <p>Vul je <b>roepnaam</b> in en tik op <b>Opslaan</b>. Die staat bovenaan het formulier bij <i>Dit station</i>
+      en wordt vooraf ingevuld bij <i>Origineel station</i> en <i>Door</i>. Later wijzigen: het tandwiel
+      (Instellingen).</p>
+    </section>
+
+    <section>
+      <h2><span class="n">3</span>Bericht invullen</h2>
+      <p>Rechtsonder in de lijst: <b>Uitgaand</b> (een bericht dat jullie versturen) of <b>Inkomend</b> (een bericht
+      dat binnenkomt).</p>
+      <p>Vul in zoals op het papieren formulier:</p>
+      <div class="paper"><span>wit: Aan, Bericht, Van (opdrachtgever)</span><span class="grey">grijs: DARES</span></div>
+      <ul>
+        <li>De <b>woorden</b> en de <b>Check</b> tellen vanzelf (maximaal 25 woorden). Een verschil met de opgegeven
+        Check zie je meteen, bijvoorbeeld <i>13/12</i>.</li>
+        <li><b>Opslaan</b> is de oranje knop (op een computer ook <span class="k">Ctrl</span>+<span class="k">S</span>).
+        Opslaan kan altijd, ook als het bericht nog niet compleet is.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="n">4</span>Status bijhouden</h2>
+      <p>Tik op de knop met de <b>volgende stap</b>. De tijd en je roepnaam worden erbij gezet.</p>
+      <p><b>Uitgaand:</b></p>
+      <div class="steps"><span>Ingediend</span><i>›</i><span>Gecontroleerd</span><i>›</i><span>Genummerd</span><i>›</i><span>Verzonden</span><i>›</i><span>Bevestigd</span></div>
+      <p><b>Inkomend:</b></p>
+      <div class="steps"><span>Ontvangen</span><i>›</i><span>Afgeleverd</span><i>of</i><span>Doorgegeven</span></div>
+      <p>Verkeerd getikt? Met de pijl terug (<i>Laatste stap ongedaan maken</i>) zet je de stap terug.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">5</span>Doorgeven en afdrukken</h2>
+      <ul>
+        <li><b>Naar een ander apparaat:</b> in het formulier via <b>Delen en kopiëren</b>: <i>QR-code tonen</i> of
+        <i>Delen als bestand</i>. Op het andere apparaat in de lijst: <b>Bericht ontvangen</b> → <i>QR-code
+        scannen</i> of <i>Bestand openen</i>. Wat je ontvangt is een kopie (alleen lezen).</li>
+        <li><b>Naar Winlink</b> (Windows): <b>Delen en kopiëren</b> → <i>Naar Winlink</i>, en in Winlink Express
+        <i>Message → Import messages</i>.</li>
+        <li><b>Afdrukken</b> of <b>Opslaan als PDF</b>: in de opmaak van het papieren formulier.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="n">6</span>Meekijken op de post (Windows)</h2>
+      <p>Met <b>Netwerk delen</b> kijken anderen op dezelfde wifi of telefoonhotspot in hun browser mee met het
+      bericht dat open staat, zonder installatie en zonder internet. Zij scannen de QR-code en vullen de code in, met
+      naam en functie. Zie de help: <i>Netwerk delen</i>.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">7</span>Aan het eind: inzet afsluiten</h2>
+      <p>Berichten horen bij een <b>inzet</b>. Op een computer staan de inzetten links; op een telefoon tik je op de
+      naam boven de lijst. Kies <b>Inzet afsluiten…</b> en sla eerst <b>CSV</b> (back-up) en <b>PDF</b> (alle
+      formulieren) op. De inzet gaat naar het archief en een nieuwe begint.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">?</span>Hulp nodig?</h2>
+      <p>Bij elk veld staat een <b>?</b> met uitleg. Het vraagteken rechtsboven opent alle help (op Windows ook
+      <span class="k">F1</span>).</p>
+      <p class="note">Houd het papieren formulier achter de hand. Je berichten staan alleen op dit apparaat: sluit een
+      inzet af met een CSV-export.</p>
+    </section>
+  </div>
+
+  <footer>
+    <span>Oversein is een onofficiële app, gemaakt door PD2FT (DARES regio 20) voor het werk tijdens een inzet of
+    training. Het is geen uitgave van DARES.</span>
+    <span>Ideeën en feedback: frank@vanson.me</span>
+  </footer>
+</div>
+</body>
+</html>

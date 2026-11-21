@@ -12,4 +12,4 @@ er worden geen externe bronnen, cookies of statistieken gebruikt.
 - `CNAME`: het eigen domein
 
 De downloads zelf staan bij de releases van
-[dares-berichtenformulier-download](https://github.com/fvanson/dares-berichtenformulier-download/releases).
+[oversein-download](https://github.com/fvanson/oversein-download/releases).
